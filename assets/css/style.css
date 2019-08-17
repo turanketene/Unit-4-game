@@ -1,8 +1,14 @@
+body {
+    background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
 .jumbotron {
-    background-color: coral;
+    background-color: salmon;
     color: black;
     text-align: center;
 
+}
+h1 {
+    font-family: 'Indie Flower', cursive;
 }
 
 .card-body p{

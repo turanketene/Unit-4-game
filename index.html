@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS external link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -20,7 +21,7 @@
         <div class="row">
             <!-- Instructions Container -->
             <div class="col-lg-12">
-                <div class="card text-white bg-secondary mb-3">
+                <div class="card text-white bg-success mb-3">
                     <div class="card-heading">
                         <h3 class="card-title">Instructions</h3>
                     </div>
@@ -39,37 +40,37 @@
         <div class="row">
             <!-- Target Score -->
             <div class="col-lg-3">
-                <div class="card text-white bg-secondary mb-3">
+                <div class="card text-white bg-success mb-3">
                     <div class="card-heading">
                         <h3 class="card-title">Target Score</h3>
                     </div>
                     <div class="card-body">
-                        <h2>87</h2>
+                        <h2 id="targetScore"></h2>
                     </div>
                 </div>
             </div>
             <!-- Your Score -->
             <div class="col-lg-3">
-                <div class="card text-white bg-secondary mb-3">
+                <div class="card text-white bg-success mb-3">
                     <div class="card-heading">
                         <h3 class="card-title">Your Score</h3>
                     </div>
                     <div class="card-body">
-                        <h2>78</h2>
+                        <h2 id="yourScore"></h2>
                     </div>
                 </div>
             </div>
             <!-- Crystals -->
             <div class="col-lg-6">
-                <div class="card text-white bg-secondary mb-3">
+                <div class="card text-white bg-success mb-3">
                     <div class="card-heading">
                         <h3 class="card-title">Crystal Selection</h3>
                     </div>
                     <div class="card-body">
-                        <img src="assets/images/1.jpg" alt="">
-                        <img src="assets/images/2.jpg" alt="">
-                        <img src="assets/images/3.jpg" alt="">
-                        <img src="assets/images/4.jpg" alt="">
+                        <img src="assets/images/1.jpg" alt="" id="blue">
+                        <img src="assets/images/2.jpg" alt="" id="navy">
+                        <img src="assets/images/3.jpg" alt="" id="red">
+                        <img src="assets/images/4.jpg" alt="" id="purple">
                     </div>
                 </div>
             </div>
@@ -77,22 +78,22 @@
         <!-- Counters -->
         <div class="row">
             <div class="col-lg-6">
-                <div class="card text-white bg-secondary mb-3">
+                <div class="card text-white bg-success mb-3">
                     <div class="card-heading">
                         <h3 class="card-title">Wins</h3>
                     </div>
                     <div class="card-body">
-                        <h3>0</h3>
+                        <h3 id="winCount">0</h3>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="card text-white bg-secondary mb-3">
+                <div class="card text-white bg-success mb-3">
                     <div class="card-heading">
                         <h3 class="card-title">Losses</h3>
                     </div>
                     <div class="card-body">
-                        <h3>0</h3>
+                        <h3 id="lossCount">0</h3>
                     </div>
                 </div>
             </div>
@@ -101,10 +102,12 @@
 
         
     </div>
+    <!-- JQuery -->
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
+    <!-- Javascript -->
     <script src="assets/javascript/game.js"></script>
     
 
