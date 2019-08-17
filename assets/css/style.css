@@ -1,8 +1,8 @@
 body {
-    background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-image: url("https://img.freepik.com/free-vector/crystal-textured-background-illustration_53876-80624.jpg?size=338&ext=jpg")
 }
 .jumbotron {
-    background-color: salmon;
+    background-color: rgb(199, 209, 230);
     color: black;
     text-align: center;
 
