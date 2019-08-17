@@ -7,8 +7,9 @@ body {
     text-align: center;
 
 }
-h1 {
+h1, h2, h3 {
     font-family: 'Indie Flower', cursive;
+    font-weight: 600;
 }
 
 .card-body p{
@@ -31,4 +32,21 @@ img {
 }
 .card-body{
     text-align: center;
+}
+
+#blue:hover {
+box-shadow: 15px 15px 15px black;
+cursor: pointer;
+}
+#navy:hover {
+box-shadow: 15px 15px 15px black;
+cursor: pointer;
+}
+#red:hover {
+box-shadow: 15px 15px 15px black;
+cursor: pointer;
+}
+#purple:hover {
+box-shadow: 15px 15px 15px black;
+cursor: pointer;
 }

@@ -29,8 +29,6 @@ var lossCount = 0;
 var getRandom = function (min,max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-
 var startGame = function () {
 
     // Reset Current Score
@@ -42,14 +40,6 @@ var startGame = function () {
     crystal.navy.value = getRandom (1, 12);
     crystal.red.value = getRandom (1, 12);
     crystal.purple.value = getRandom (1, 12);
-    
-    console.log(targetScore);
-    console.log("Blue: " + crystal.blue.value);
-    console.log("Navy: " + crystal.navy.value);
-    console.log("Red: " + crystal.red.value);
-    console.log("Purple: " + crystal.purple.value);
-
-
     // Reflect changes to HTML
     $("#yourScore").html(currentScore);
     $("#targetScore").html(targetScore);
@@ -63,7 +53,6 @@ var addValues = function(crystal){
     checkWin();
     // Reflect to HTML
     $("#yourScore").html(currentScore);
-    console.log("Your Score: " + currentScore);
 }
 
 // Check if user won or lost
@@ -72,20 +61,17 @@ var checkWin = function() {
         alert("You Lost! No Gems for you :((((");
         lossCount++
         $("#lossCount").html(lossCount);
-        startGame();
-        console.log ("shit");
+        startGame(); 
     }
     else if (currentScore === targetScore){
         alert("Congrats! You Won!!! You're RICH! :DDDD");
         winCount++
         $("#winCount").html(winCount);
         startGame();
-        console.log("Hell yeah");
     }
 }
 
-// Main Processes (Calling Functions)
-// ======================================
+
 
 // click function
 $("#blue").click(function() {
@@ -104,5 +90,13 @@ addValues(crystal.purple);
 
 startGame();
 
+
+// PSEUDOCODE
+// 1. Create variables for the game (Win count, loss count, target score, your score, crystals)
+// 2. Random generate a number for target score and crystal value
+// 3. Clicking crystals must generate response, add value to "your score"
+// 4. If your score equals target score, we win, add a point to wins count
+// 5. If your score is more than target score, we lose, add point to losses count
+// 6. After win or loss, game resets, target score becomes a different number, your score resets back to zero, crystals assigned a new value.
 
 
