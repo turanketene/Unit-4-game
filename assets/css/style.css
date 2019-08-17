@@ -1,0 +1,28 @@
+.jumbotron {
+    background-color: coral;
+    color: black;
+    text-align: center;
+
+}
+
+.card-body p{
+    font-size: small;
+}
+.card-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-body h2 {
+    text-align: center;
+}
+
+img {
+    width: 60px;
+    margin-right: 20px;
+    height: 60px;
+
+}
+.card-body{
+    text-align: center;
+}
